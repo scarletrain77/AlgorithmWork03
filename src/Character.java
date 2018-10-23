@@ -35,6 +35,10 @@ public class Character {
 		numberSerial = ns;
 	}
 	
+	public void addNumberSerial(String ns){
+		numberSerial = addString(numberSerial, ns);
+	}
+	
 	public String getNumberSerial(){
 		return numberSerial;
 	}
@@ -50,4 +54,10 @@ public class Character {
 	public String toString(){
 		return "×Ö·û:" + character + "£¬±àÂë" + numberSerial + "£¬ÆµÂÊ" + rate;
 	}
+	//×Ö·û´®Á¬½Ó
+    public static String addString(String text, String addstring) {
+        StringBuilder sb = new StringBuilder(text);
+        sb.append(addstring);
+        return sb.toString();
+    }
 }

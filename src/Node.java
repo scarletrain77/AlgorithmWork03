@@ -41,7 +41,7 @@ public class Node {
 	
 	public static void preOrder(Node n){
 		if(n != null){
-			 System.out.print(n.value.getRate()+"  ");  
+			 System.out.print("Rate: " + n.value.getRate() + ", ¹þ·òÂü: " + n.value.getNumberSerial() + ", ×ÖÄ¸£º " + n.value.getCharacter() + "\n");   
 	         preOrder(n.leftChild);  
 	         preOrder(n.rightChild); 
 		}

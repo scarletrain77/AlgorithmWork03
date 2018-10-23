@@ -22,23 +22,20 @@ public class Test {
 			int number = Node.minNode(chas);
 			Node temp = new Node();
 			temp.leftChild = chas.get(number);
-			String tempSerialNumber = "";
-			//temp.leftChild.value.setNumberSerial(ns);
+			//String tempSerialNumber = "";
+			temp.leftChild.value.addNumberSerial("0");
 			chas.remove(chas.get(number));
 			number = Node.minNode(chas);
 			temp.rightChild = chas.get(number);
+			temp.rightChild.value.addNumberSerial("1");
 			chas.remove(chas.get(number));
 			temp.setValue();			
 			chas.add(temp);
 		}
+		//
 		Node.preOrder(chas.get(0));
 		//System.out.println(chas.get(0).rightChild.leftChild.value.getRate());
-		System.out.println(addString("aaaa", "aass"));
+		//System.out.println(addString("aaaa", "aass"));
 	}
-	//×Ö·û´®Á¬½Ó
-    public static String addString(String text, String addstring) {
-        StringBuilder sb = new StringBuilder(text);
-        sb.append(addstring);
-        return sb.toString();
-    }
+
 }
