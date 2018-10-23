@@ -32,8 +32,13 @@ public class Test {
 			temp.setValue();			
 			chas.add(temp);
 		}
+		chas.get(0).value.setNumberSerial("0");
 		//
-		Node.preOrder(chas.get(0));
+		//Node.preOrder(chas.get(0));
+		//Node a = 		
+		//Node.findCharacter(chas.get(0), 'B');
+		System.out.println(chas.get(0).rightChild.leftChild.value.getNumberSerial());
+		//System.out.println(Node.findCharacter(chas.get(0), 'A'));
 		//System.out.println(chas.get(0).rightChild.leftChild.value.getRate());
 		//System.out.println(addString("aaaa", "aass"));
 	}

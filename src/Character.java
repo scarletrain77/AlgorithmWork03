@@ -57,7 +57,8 @@ public class Character {
 	//字符串连接
     public static String addString(String text, String addstring) {
         StringBuilder sb = new StringBuilder(text);
-        sb.append(addstring);
+        //应该在前面插入，不应该再后面接
+        sb.insert(0, addstring);
         return sb.toString();
     }
 }
